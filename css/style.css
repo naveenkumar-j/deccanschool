@@ -9933,6 +9933,44 @@ text-align: center;
   justify-content: center;
 }
 
+.marquee {
+  width: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 61px;
+  background:#4c5a7d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.marquee .text {
+  display: inline-block;
+  padding-left: 4.4rem;
+  text-indent: 0;
+  animation: marquee 12s linear infinite;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 125%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+
+
+  
 
 
 
